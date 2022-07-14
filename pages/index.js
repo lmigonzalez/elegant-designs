@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
