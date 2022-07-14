@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Process = () => {
   return (
-    <section className="bg-[#FFDEDE]">
+    <section id="process" className="bg-[#FFDEDE]">
       <div className="container">
         <h2>Process</h2>
         <p className="text-center mb-10">

@@ -1,12 +1,20 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+
 
 const Work = () => {
   return (
-    <section className="relative">
+    <section id="work" className="relative">
       <h2>Recent Work</h2>
 
-	  <div className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
+	  <motion.div
+    initial={{y: 100, opacity: 0 }}
+    whileInView={{y:0, opacity: 1 }}
+    viewport={{once: true, amount: 0.8, }}
+
+    className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
           <Image src="/img/web-design.png" width={250} height={250} />{" "}
@@ -30,12 +38,24 @@ const Work = () => {
               <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
-          <button>VIEW WEBSITE</button>
+          <motion.button
+          whileHover={{
+            scale:1.1
+          }}
+          whileTap={{
+            scale:0.9
+          }}
+          >VIEW WEBSITE</motion.button>
         </div>
 	
-      </div>
+      </motion.div>
 
-      <div className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
+      <motion.div
+    initial={{y: 100, opacity: 0 }}
+    whileInView={{y:0, opacity: 1 }}
+    viewport={{once: true, amount: 0.8, }}
+
+    className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
           <Image src="/img/web-design.png" width={250} height={250} />{" "}
@@ -59,13 +79,24 @@ const Work = () => {
               <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
-          <button>VIEW WEBSITE</button>
+          <motion.button
+          whileHover={{
+            scale:1.1
+          }}
+          whileTap={{
+            scale:0.9
+          }}
+          >VIEW WEBSITE</motion.button>
         </div>
 	
-      </div>
+      </motion.div>
 
+      <motion.div
+    initial={{y: 100, opacity: 0 }}
+    whileInView={{y:0, opacity: 1 }}
+    viewport={{once: true, amount: 0.8, }}
 
-      <div className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
+    className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
           <Image src="/img/web-design.png" width={250} height={250} />{" "}
@@ -89,10 +120,22 @@ const Work = () => {
               <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
-          <button>VIEW WEBSITE</button>
+          <motion.button
+          whileHover={{
+            scale:1.1
+          }}
+          whileTap={{
+            scale:0.9
+          }}
+          >VIEW WEBSITE</motion.button>
         </div>
 	
-      </div>
+      </motion.div>
+
+      
+
+      
+
     </section>
   );
 };

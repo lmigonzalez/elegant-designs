@@ -5,6 +5,10 @@
 
 @layer base{
 
+  html{
+    @apply scroll-smooth
+  }
+
   section{
     @apply w-full flex flex-col justify-center items-center px-4 py-20
   }
@@ -23,7 +27,7 @@
   }
 
   button{
-    @apply bg-[#EB4747] text-[#fff] py-1 px-3 rounded-lg text-2xl
+    @apply bg-[#EB4747] text-[#fff] py-1 px-3 rounded-lg text-2xl drop-shadow-lg
   }
   li{
     @apply mx-2
