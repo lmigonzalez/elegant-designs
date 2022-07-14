@@ -15,7 +15,7 @@ const Hero = () => {
         viewport={{once: true, amount: 0.8}}
         className="mb-10"
       >
-        <Image src="/img/ed-logo.png" width={150} height={150} />
+        <Image src="/img/ed-logo.png" alt="logo" width={150} height={150} />
       </motion.div>
       <motion.div
        initial={{opacity:0, y:50 }}
@@ -43,12 +43,12 @@ const Hero = () => {
         initial={{opacity:0, x:20 }}
         whileInView= {{opacity:1, x:0}}
         viewport={{once: true, amount: 0.8}}
-       className="hidden md:inline-flex absolute bottom-0 right-0"> <Image src='/img/mouse.png' width={150} height={150}/> </motion.div>
+       className="hidden md:inline-flex absolute bottom-0 right-0"> <Image src='/img/mouse.png' alt="mouse" width={150} height={150}/> </motion.div>
       <motion.div 
       initial={{opacity:0, x:-20 }}
       whileInView= {{opacity:1, x:0}}
       viewport={{once: true, amount: 0.8}}
-      className="hidden md:inline-flex absolute top-0 left-0"> <Image src='/img/keyboard.png' width={150} height={150}/> </motion.div>
+      className="hidden md:inline-flex absolute top-0 left-0"> <Image src='/img/keyboard.png' alt="keyboard" width={150} height={150}/> </motion.div>
     </section>
   );
 };

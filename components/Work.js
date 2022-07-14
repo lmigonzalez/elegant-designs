@@ -17,7 +17,7 @@ const Work = () => {
     className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
-          <Image src="/img/web-design.png" width={250} height={250} />{" "}
+          <Image src="/img/web-design.png" alt="" width={250} height={250} />{" "}
         </div>
         <div className="p-3 md:w-3/5">
           <h3>Personal Portfolio</h3>
@@ -29,13 +29,13 @@ const Work = () => {
           </p>
           <div className="flex justify-center md:justify-start items-center">
             <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/html.png" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
+              <Image src="/img/html.png" alt="html icon" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/css.png" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
+              <Image src="/img/css.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
+              <Image src="/img/js.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
           <motion.button
@@ -58,7 +58,7 @@ const Work = () => {
     className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
-          <Image src="/img/web-design.png" width={250} height={250} />{" "}
+          <Image src="/img/web-design.png" alt="" width={250} height={250} />{" "}
         </div>
         <div className="p-3 md:w-3/5">
           <h3>Personal Portfolio</h3>
@@ -70,13 +70,13 @@ const Work = () => {
           </p>
           <div className="flex justify-center md:justify-start items-center">
             <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/html.png" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
+              <Image src="/img/html.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/css.png" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
+              <Image src="/img/css.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
+              <Image src="/img/js.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
           <motion.button
@@ -99,7 +99,7 @@ const Work = () => {
     className="flex-col text-center  md:flex-row md:text-start bg-[#ABC9FF] w-full flex justify-center items-center my-5 md:p-5 rounded-lg drop-shadow-lg max-w-[1200px] relative z-10">
         <div className="p-3 md:w-2/5 flex justify-center items-center">
           {" "}
-          <Image src="/img/web-design.png" width={250} height={250} />{" "}
+          <Image src="/img/web-design.png" alt="" width={250} height={250} />{" "}
         </div>
         <div className="p-3 md:w-3/5">
           <h3>Personal Portfolio</h3>
@@ -111,13 +111,13 @@ const Work = () => {
           </p>
           <div className="flex justify-center md:justify-start items-center">
             <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/html.png" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
+              <Image src="/img/html.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> HTML</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/css.png" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
+              <Image src="/img/css.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> CSS</p>
             </div>
 			      <div className="flex justify-start items-center text-start mr-3">
-              <Image src="/img/js.png" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
+              <Image src="/img/js.png" alt="" width={25} height={25}/> <p className="font-bold mx-2"> JAVASCRIPT</p>
             </div>
           </div>
           <motion.button

@@ -20,13 +20,13 @@ const Process = () => {
             </p>
           </div>
           <div className="w-1/2 flex items-center justify-center">
-            <Image src="/img/discuss.png" width={150} height={150} />{" "}
+            <Image src="/img/discuss.png" alt="discuss" width={150} height={150} />{" "}
           </div>
         </div>
 
 		<div className="flex items-center justify-center w-full my-5">
 		<div className="w-1/2 flex items-center justify-center">
-            <Image src="/img/web-design.png" width={150} height={150} />{" "}
+            <Image src="/img/web-design.png" alt="web design" width={150} height={150} />{" "}
           </div>
           <div className="w-1/2 text-start">
             <h3>Design</h3>
@@ -47,13 +47,13 @@ const Process = () => {
             </p>
           </div>
           <div className="w-1/2 flex items-center justify-center">
-            <Image src="/img/coding.png" width={150} height={150} />{" "}
+            <Image src="/img/coding.png" alt="coding" width={150} height={150} />{" "}
           </div>
         </div>
 
 		<div className="flex items-center justify-center w-full my-5">
 		<div className="w-1/2 flex items-center justify-center">
-            <Image src="/img/update.png" width={150} height={150} />{" "}
+            <Image src="/img/update.png" alt="update" width={150} height={150} />{" "}
           </div>
           <div className="w-1/2 text-start">
             <h3>Maintain</h3>
