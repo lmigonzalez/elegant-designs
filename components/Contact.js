@@ -91,9 +91,9 @@ const Contact = () => {
           type="submit" className="bg-[#EB4747] w-full md:w-1/2 h-10">Submit</motion.button>
         </div>
 
-		<div className="absolute -top-9 right-1"> <Image src='/img/clip.png' width={80} height={80}/> </div>
+		<div className="absolute -top-9 right-1"> <Image src='/img/clip.png' alt="" width={80} height={80}/> </div>
 
-		<div className="absolute -top-9 left-1"> <Image src='/img/clip.png' width={80} height={80}/> </div>
+		<div className="absolute -top-9 left-1"> <Image src='/img/clip.png' alt="" width={80} height={80}/> </div>
         
       </motion.form>
     </section>

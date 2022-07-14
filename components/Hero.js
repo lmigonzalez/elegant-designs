@@ -8,7 +8,7 @@ const Hero = () => {
  
   return (
     <section id="hero" className="bg-[#ABC9FF] pt-10 relative">
-      <div className="absolute top-3 right-3 cursor-pointer md:hidden"> <Image src='/img/menu.png' width={25} height={25}/> </div>
+      <div className="absolute top-3 right-3 cursor-pointer md:hidden"> <Image src='/img/menu.png' alt="" width={25} height={25}/> </div>
       <motion.div
         initial={{y:-50 }}
         whileInView= {{y:0}}
