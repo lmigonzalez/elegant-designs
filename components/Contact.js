@@ -24,13 +24,13 @@ const Contact = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
 
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
+    // const config = {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    // }
 
-    axios.post('https://www.elegantdesigns.site/api/mail', userData, config)
+    axios.post('https://www.elegantdesigns.site/api/mail', userData)
     .then(res=>{
       console.log(res)
 
