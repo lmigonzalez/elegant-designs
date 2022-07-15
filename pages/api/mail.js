@@ -14,7 +14,7 @@ const mail = async(req, res) => {
 		}
 	})
 	
-	const mailData = {
+	await transport.sendMail({
 		from: `${process.env.MAIL_USER}`,
 		to: `${process.env.MAIL_USER}`,
 		subject: 'Client Message',
@@ -24,21 +24,9 @@ const mail = async(req, res) => {
 		<p> <b>Type: </b> ${type} </p>
 		<p> <b>Idea: </b> ${idea} </p>
 		</div>`
-	}
-	
-	
-	await transport.sendMail(mailData, function (err, info) {
-		if(err){
-			console.log(err)
-			
-		}
-		else{
-			console.log(info)
-			
-		}
 	})
 	
-	res.status(200).json(req)
+	res.status(201).json(req)
 	
 	
 }

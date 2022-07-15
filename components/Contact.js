@@ -30,18 +30,18 @@ const Contact = () => {
     //   },
     // }
 
-    
+    // const data = JSON.stringify(userData)
 
     axios.post('/api/mail', userData)
     .then(res=>{
       console.log(res)
 
     }).catch(err=>{
-      console.log(err)
+      console.log(err.response.data)
     })
 
-    setUserData(initialData)
-
+    
+   
   }
 
   return (
