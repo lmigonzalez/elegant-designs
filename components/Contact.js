@@ -30,7 +30,9 @@ const Contact = () => {
     //   },
     // }
 
-    axios.post('https://www.elegantdesigns.site/api/mail', userData)
+    const data = JSON.stringify(userData)
+
+    axios.post('https://www.elegantdesigns.site/api/mail', data)
     .then(res=>{
       console.log(res)
 
