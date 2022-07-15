@@ -33,13 +33,13 @@ const mail = async(req, res) => {
 			
 		}
 		else{
-			console.log("info")
+			console.log(info)
 			
 		}
 	})
 	
-	res.status(200).json(req.body)
-	console.log(`env ${process.env.MAIL_HOST}`)
+	res.status(200).json(req)
+	
 	
 }
   
