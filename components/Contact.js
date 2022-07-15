@@ -60,6 +60,7 @@ const Contact = () => {
 
       closeSuccessMessage()
       closeErrorMessage()
+      setUserData(initialData)
   };
 
   return (
