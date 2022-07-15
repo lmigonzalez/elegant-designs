@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
 
-    axios.post('http://localhost:3000/api/mail', userData)
+    axios.post('https://www.elegantdesigns.site/api/mail', userData)
     .then(res=>{
       console.log(res.data)
 

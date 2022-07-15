@@ -15,8 +15,8 @@ const mail = async(req, res) => {
 	})
 	
 	const mailData = {
-		from: `luisgonzalez@elegantdesigns.site`,
-		to: `luisgonzalez@elegantdesigns.site`,
+		from: `${process.env.MAIL_USER}`,
+		to: `${process.env.MAIL_USER}`,
 		subject: 'Client Message',
 		html: `<div> 
 		<p> <b>Name: </b> ${name} </p>
