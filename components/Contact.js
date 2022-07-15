@@ -32,7 +32,7 @@ const Contact = () => {
 
     
 
-    axios.post('https://elegantdesigns.site/api/mail', userData)
+    axios.post('/api/mail', userData)
     .then(res=>{
       console.log(res)
 
