@@ -130,6 +130,7 @@ const Navbar = () => {
                   alt=""
                   width={50}
                   height={50}
+                  className='cursor-none'
                 />
               </a>
             </Link>
