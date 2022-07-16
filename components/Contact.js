@@ -66,14 +66,9 @@ const Contact = () => {
     <section id="contact">
       <h2>Let's Talk</h2>
       <p className="text-center">
-        My inbox is always open. So send me an email, and I'll get back to you
+        My inbox is always open. So send me a message, and I'll get back to you
         asap.
       </p>
-      <Link href="/" className="text-center">
-        <a className="text-[#EB4747] ">luisgonzalez@elegantdesigns.site</a>
-      </Link>
-
-      <p className="text-center">-or-</p>
       <motion.form
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
