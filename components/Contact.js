@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -68,7 +69,10 @@ const Contact = () => {
       <h2>Let's Talk</h2>
       <p className="text-center">
       My inbox is always open. So send me an email, and I'll get back to you asap.</p>
-      <a href="/" className="text-[#EB4747] ">luisgonzalez@elegantdesigns.site</a>
+      <Link href='/'>
+      <a className="text-[#EB4747] ">luisgonzalez@elegantdesigns.site</a>
+      </Link>
+     
       <p>
       -or-
       </p>
