@@ -12,22 +12,21 @@ const Contact = () => {
     idea: "",
   };
 
-  const [successMsg, setSuccessMsg] = useState(false)
-  const [errorMsg, setErrorMsg] = useState(false)
+  const [successMsg, setSuccessMsg] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(false);
   const [userData, setUserData] = useState(initialData);
 
-
-  const closeSuccessMessage = () =>{
+  const closeSuccessMessage = () => {
     setTimeout(() => {
-      setSuccessMsg(false)
-    }, 5000)
-  }
+      setSuccessMsg(false);
+    }, 5000);
+  };
 
-  const closeErrorMessage = () =>{
+  const closeErrorMessage = () => {
     setTimeout(() => {
-      setErrorMsg(false)
-    }, 5000)
-  }
+      setErrorMsg(false);
+    }, 5000);
+  };
 
   const handleChange = (e) => {
     setUserData({
@@ -51,31 +50,30 @@ const Contact = () => {
       .post("/api/mail", userData)
       .then((res) => {
         console.log(res.data);
-        setSuccessMsg(true)
+        setSuccessMsg(true);
       })
       .catch((err) => {
         console.log(err);
-        setErrorMsg(true)
+        setErrorMsg(true);
       });
 
-
-      closeSuccessMessage()
-      closeErrorMessage()
-      setUserData(initialData)
+    closeSuccessMessage();
+    closeErrorMessage();
+    setUserData(initialData);
   };
 
   return (
     <section id="contact">
       <h2>Let's Talk</h2>
       <p className="text-center">
-      My inbox is always open. So send me an email, and I'll get back to you asap.</p>
-      <Link href='/'>
-      <a className="text-[#EB4747] text-center">luisgonzalez@elegantdesigns.site</a>
-      </Link>
-     
-      <p className="text-center">
-      -or-
+        My inbox is always open. So send me an email, and I'll get back to you
+        asap.
       </p>
+      <Link href="/" className="text-[#EB4747] text-center">
+        <a>luisgonzalez@elegantdesigns.site</a>
+      </Link>
+
+      <p className="text-center">-or-</p>
       <motion.form
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
@@ -136,10 +134,12 @@ const Contact = () => {
             Submit
           </motion.button>
         </div>
-        <div className={successMsg? 'visible': 'hidden' }>
-          <p className='text-green-500 text-center'>Message sent successfully!</p>
+        <div className={successMsg ? "visible" : "hidden"}>
+          <p className="text-green-500 text-center">
+            Message sent successfully!
+          </p>
         </div>
-        <div className={errorMsg? 'visible': 'hidden' }>
+        <div className={errorMsg ? "visible" : "hidden"}>
           <p className=" text-red-500 text-center">
             Your message wasn't sent. Please try again!
           </p>
