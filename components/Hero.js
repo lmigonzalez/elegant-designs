@@ -7,7 +7,7 @@ const Hero = () => {
 const router = useRouter()
 
   const handleClick = () =>{
-    router.push('/#contact')
+    router.push('#contact')
   }
   return (
     <section id="hero" className="bg-[#ABC9FF] pt-10 relative">
