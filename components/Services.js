@@ -21,8 +21,8 @@ const Services = () => {
           <p className="text-base">
           If you are looking for a design for your website, you have come to the right place. I will create a unique and beautiful design that will look amazing on any device, from desktop to mobile.
           </p>
-          <p className="text-base text-start font-bold">Design included:</p>
-          <ul className=" text-[#595959] list-disc text-start">
+          <p className="text-base font-bold">Design included:</p>
+          <ul className=" text-[#595959] list-disc">
             <li>mobile view</li>
             <li>tablet view</li>
             <li>desktop view</li>
@@ -67,7 +67,7 @@ const Services = () => {
           What is the use of having a beautiful website if no one can find it? That's why I take SEO very seriously, and you should too. I will ensure your website meets the fundamental conditions to appear in the first positions of google.
           </p>
           <p className="text-base text-start font-bold">This service includes:</p>
-          <ul className=" text-[#595959] list-disc text-start">
+          <ul className=" text-[#595959] list-disc">
             <li>writing a compelling title tag and meta description</li>
             <li>optimize your images</li>
             <li>optimize your page speed</li>
