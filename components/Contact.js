@@ -69,8 +69,8 @@ const Contact = () => {
         My inbox is always open. So send me an email, and I'll get back to you
         asap.
       </p>
-      <Link href="/" className="text-[#EB4747] text-center">
-        <a>luisgonzalez@elegantdesigns.site</a>
+      <Link href="/" className="text-[#EB4747] text-center bg-slate-200">
+        <a className="text-[#EB4747]" >luisgonzalez@elegantdesigns.site</a>
       </Link>
 
       <p className="text-center">-or-</p>
