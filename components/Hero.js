@@ -1,8 +1,14 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+const router = useRouter()
+
+  const handleClick = () =>{
+    router.push('/#contact')
+  }
   return (
     <section id="hero" className="bg-[#ABC9FF] pt-10 relative">
 
@@ -21,10 +27,10 @@ const Hero = () => {
         className="flex flex-col justify-center items-center text-center"
       >
         <h1>
-          I'm a freelance web developer with <br></br> a taste for perfection
+        I'm a freelance Full-Stack Web Developer with <br></br> a taste for perfection
         </h1>
         <p>
-          I will build the website your need business to grow <br></br>{" "}
+        I will design and build the website your business needs to grow <br></br>{" "}
           exponentially
         </p>
         <motion.button
@@ -35,6 +41,7 @@ const Hero = () => {
             scale: 0.9,
           }}
           className="w-[15rem]"
+          onClick={handleClick}
         >
           Let's Talk
         </motion.button>

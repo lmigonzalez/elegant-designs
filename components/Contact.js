@@ -66,8 +66,11 @@ const Contact = () => {
   return (
     <section id="contact">
       <h2>Let's Talk</h2>
-      <p className="text-center md:text-start">
-        From design to development to SEO, I've got you covered.
+      <p className="text-center">
+      My inbox is always open. So send me an email, and I'll get back to you asap.</p>
+      <a href="/" className="text-[#EB4747] ">luisgonzalez@elegantdesigns.site</a>
+      <p>
+      -or-
       </p>
       <motion.form
         initial={{ scale: 0.5, opacity: 0 }}
