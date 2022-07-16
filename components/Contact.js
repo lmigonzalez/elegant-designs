@@ -70,10 +70,10 @@ const Contact = () => {
       <p className="text-center">
       My inbox is always open. So send me an email, and I'll get back to you asap.</p>
       <Link href='/'>
-      <a className="text-[#EB4747] ">luisgonzalez@elegantdesigns.site</a>
+      <a className="text-[#EB4747] text-center">luisgonzalez@elegantdesigns.site</a>
       </Link>
      
-      <p>
+      <p className="text-center">
       -or-
       </p>
       <motion.form
