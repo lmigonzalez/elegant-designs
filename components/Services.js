@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section id="services" className="bg-[#FFDEDE]">
       <h2>Services</h2>
-      <p>From design to development to SEO, I've got you covered. So describe your idea, and I will bring it to life.</p>
+      <p className="text-center">From design to development to SEO, I've got you covered. So describe your idea, and I will bring it to life.</p>
       <div className="flex-col md:flex-row max-w-[1200px] flex justify-center items-center my-5">
         <motion.div
          initial={{x: -50, opacity: 0 }}
