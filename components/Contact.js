@@ -109,7 +109,7 @@ const Contact = () => {
         <input
           className="p-1 rounded-lg bg-[#FFDEDE] border-solid border-[#fff] border-2 placeholder-[#595959] mb-4"
           type="email"
-          placeholder="Enter full name"
+          placeholder="Enter email"
           name="email"
           value={userData.email}
           onChange={handleChange}
@@ -123,7 +123,7 @@ const Contact = () => {
           onChange={handleChange}
           value={userData.type}
         >
-          <option value="">Please select</option>
+          <option value="">Please select website type</option>
           <option value="blog">Blog</option>
           <option value="eCommerce">eCommerce</option>
           <option value="portfolio">Portfolio</option>
@@ -133,7 +133,7 @@ const Contact = () => {
         <label className="text-[#595959]">Idea:</label>
         <textarea
           className="p-1 rounded-lg bg-[#FFDEDE] border-solid border-[#fff] border-2 placeholder-[#595959] mb-4"
-          placeholder="Enter full name"
+          placeholder="Tell me more..."
           cols="30"
           name="idea"
           value={userData.idea}
