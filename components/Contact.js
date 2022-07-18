@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -15,6 +14,23 @@ const Contact = () => {
   const [successMsg, setSuccessMsg] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
   const [userData, setUserData] = useState(initialData);
+  const [btnDisabled, setBtnDisabled] = useState(true);
+
+  useEffect(() => {
+    checkIfContent();
+  }, [handleChange]);
+
+  const checkIfContent = () => {
+    if (
+      userData.name.length >= 3 &&
+      userData.email.length > 5 &&
+      userData.type.length
+    ) {
+      setBtnDisabled(false);
+    } else {
+      setBtnDisabled(true);
+    }
+  };
 
   const closeSuccessMessage = () => {
     setTimeout(() => {
@@ -28,7 +44,7 @@ const Contact = () => {
     }, 5000);
   };
 
-  const handleChange = (e) => {
+  function handleChange(e){
     setUserData({
       ...userData,
       [e.target.name]: e.target.value,
@@ -76,7 +92,9 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="flex flex-col w-[600px] max-w-[100%] bg-[#FFDEDE] py-12 px-4 rounded-lg drop-shadow-lg mt-10 relative"
       >
-        <label className="text-[#595959]">Name:</label>
+        <label className="text-[#595959] after:content-['*'] after:text-[#EB4747]">
+          Name:
+        </label>
         <input
           className="p-1 rounded-lg bg-[#FFDEDE] border-solid border-[#fff] border-2 placeholder-[#595959] mb-4"
           type="text"
@@ -85,7 +103,9 @@ const Contact = () => {
           value={userData.name}
           onChange={handleChange}
         />
-        <label className="text-[#595959]">Email:</label>
+        <label className="text-[#595959] after:content-['*'] after:text-[#EB4747]">
+          Email:
+        </label>
         <input
           className="p-1 rounded-lg bg-[#FFDEDE] border-solid border-[#fff] border-2 placeholder-[#595959] mb-4"
           type="email"
@@ -94,7 +114,9 @@ const Contact = () => {
           value={userData.email}
           onChange={handleChange}
         />
-        <label className="text-[#595959]">Website Type:</label>
+        <label className="text-[#595959] after:content-['*'] after:text-[#EB4747]">
+          Website Type:
+        </label>
         <select
           className="p-1 rounded-lg bg-[#FFDEDE] border-solid border-[#fff] border-2 text-[#595959] mb-4"
           name="type"
@@ -105,6 +127,8 @@ const Contact = () => {
           <option value="blog">Blog</option>
           <option value="eCommerce">eCommerce</option>
           <option value="portfolio">Portfolio</option>
+          <option value="business">Business</option>
+          <option value="other">Other</option>
         </select>
         <label className="text-[#595959]">Idea:</label>
         <textarea
@@ -124,7 +148,12 @@ const Contact = () => {
               scale: 0.9,
             }}
             type="submit"
-            className="bg-[#EB4747] w-full md:w-1/2 h-10"
+            disabled={btnDisabled}
+            className={
+              btnDisabled
+                ? "bg-[#e59494] w-full md:w-1/2 h-10"
+                : "bg-[#EB4747] w-full md:w-1/2 h-10"
+            }
           >
             Submit
           </motion.button>
