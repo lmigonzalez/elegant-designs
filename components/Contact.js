@@ -122,6 +122,7 @@ const Contact = () => {
           name="type"
           onChange={handleChange}
           value={userData.type}
+          data-testid="select-option"
         >
           <option value="">Please select website type</option>
           <option value="blog">Blog</option>
