@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <div className= 'w-full bg-red-50'>
       <Head>
-        <title>Elegant Designs</title>
-        <meta name="description" content="A freelancer web developer and web designer" />
+        <title>Elegant Designs | Web Developer Freelance
+        </title>
+        <meta name="description" content="As a freelance web developer and designer, I will deliver a unique, beautiful, responsive, fast, and SEO-friendly website. Let me focus on growing your business while you focus on running it." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>

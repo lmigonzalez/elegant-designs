@@ -44,12 +44,12 @@ const Contact = () => {
     }, 5000);
   };
 
-  function handleChange(e){
+  function handleChange(e) {
     setUserData({
       ...userData,
       [e.target.name]: e.target.value,
     });
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -172,12 +172,12 @@ const Contact = () => {
 
         <div className="absolute -top-9 right-1">
           {" "}
-          <Image src="/img/clip.png" alt="" width={80} height={80} />{" "}
+          <Image src="/img/clip.png" alt="clip icon" width={80} height={80} />{" "}
         </div>
 
         <div className="absolute -top-9 left-1">
           {" "}
-          <Image src="/img/clip.png" alt="" width={80} height={80} />{" "}
+          <Image src="/img/clip.png" alt="clip icon" width={80} height={80} />{" "}
         </div>
       </motion.form>
     </section>
