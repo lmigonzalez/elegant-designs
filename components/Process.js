@@ -38,7 +38,7 @@ const Process = () => {
           <div className="w-1/2 text-end">
             <h3>Develop</h3>
             <p>
-            This step is the most important and the one that takes the most time. But, once you are done, you will have a fully-responsive, fully-functional, and SEO-friendly website that will allow you to get new clients.
+            This step is the most important and the one that takes the most time. But, once I'm done, you will have a fully-responsive, fully-functional, and SEO-friendly website that will allow you to get new clients.
             </p>
           </div>
           <div className="w-1/2 flex items-center justify-center">
